@@ -40,6 +40,21 @@
     top: 900px;
     z-index: -3;
   }
+  #toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#6e2d2d;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:rgb(238, 220, 220);
+    font-family:verdana;
+    font-size:16px;
+    }
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
