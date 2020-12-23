@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript"> 
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) { 
+  $('#toTop').fadeIn();} 
+  else {
+  $('#toTop').fadeOut();}
+  });
+  $('#toTop').click(function() {
+  $('body,html').animate({scrollTop:0},800);});  
+  });
+  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+   <style>
+      #toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#6e2d2d;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:8%; /* отступ кнопки от нижнего края страницы*/
+    right:1%;
+    cursor:pointer;
+    display:none;
+    color:rgb(238, 220, 220);
+    font-family:verdana;
+    font-size:16px;
+    }
+      
+     .albums {
+      position: relative;
+      width:200px;
+      height: 200px;
+      transform-style: preserve-3d;
+      animation: animate 30s linear infinite;
+      }
+      @keyframes animate {
+      0%
+      {transform: perspective(1500px) rotateY(0deg);}
+      100%
+      {transform: perspective(1500px) rotateY(360deg);}
+      }
+      .albums span {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+      -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,#0004);
+}
+      .albums span img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      }
+
+      .cover {
+        float: left;
+        margin-left: 10%;
+        margin-top: 5%;
+      }
+      .cover img {
+        width:25vw ;
+      }
+      .info {
+        margin-top: 5%;
+      float: right;
+      width: 49%;
+      margin-right: 10%;
+      font-size: 16pt;
+      }
+      .music {
+        margin-top: 2%;
+        width: 80%;
+        margin-left: 10%;
+      }
+   </style>
+    <title>Discography</title>
+  </head>
+
+  <header class="showcase">
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="../index.html">ГЛАВНАЯ</a></li>
+              <li><a href="./bio.html">БИОГРАФИЯ</a></li>
+              <li><a href="./disco.html">ДИСКОГРАФИЯ</a></li>
+              <li><a href="./mv.html">КЛИПЫ</a></li>
+              <li><a href="../php/concerts.php">КОНЦЕРТЫ</a></li>
+              <li><a href="./label.html">ЛЕЙБЛ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container showcase-inner">
+      <h2>ДИСКОГРАФИЯ</h2>
+      <div class="albums">
+        <span style="--i:1"><a href="#inlife"><img  src="../img/1.jpg"></a></span>
+        <span style="--i:2"><a href="#golive"><img src="../img/2.jpg"></a></span>
+        <span style="--i:3"><a href="#levanter"><img src="../img/3.jpg"></a></span>
+        <span style="--i:4"><a href="#yw"><img src="../img/4.jpg"></a></span>
+        <span style="--i:5"><a href="#mr"><img src="../img/5.jpg"></a></span>
+        <span style="--i:6"><a href="#iy"><img src="../img/6.jpg"></a></span>
+        <span style="--i:7"><a href="#iw"><img src="../img/7.jpg"></a></span>
+        <span style="--i:8"><a href="#in"><img src="../img/8.jpg"></a></span>
+     </div>
+    
+  </header>
+  <div ID = "toTop" > ^ Наверх </div>
+  <body>
+    <section id="inlife">
+      
+        <div class="onwhite" ><h1><b>IN LIFE</b></h1></div>
+          <div class="cover"><img src="../img/1_1.jpg"> </div>
+          <div class="info">
+            <p>Заглавная песня «Back Door» - это как приглашение присоединиться к «Back Door», 
+                если вы хотите и дальше наслаждаться азартом предыдущей работы «God's Menu» (Божественное меню). 
+                Он захватывает вкусы глобальных поклонников K-pop с волнением, как будто входит в запретную 
+                зону за пределами соответствующих людей. Для создания атмосферы фестиваля использовались 
+                различные инструменты, такие как акустика и синтезаторы, а в середине песни был помещен 
+                уникальный музыкальный инструмент, чтобы сделать ее более красочной.</p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/1fOJ6SHLXOLnsuuwiLyzft" class ="music"  height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+         <hr>
+    </section>
+    <section id="golive">
+      
+        <div class="onwhite" ><h1><b>GO LIVE</b></h1></div>
+          <div class="cover"><img src="../img/2.jpg"> </div>
+          <div class="info">
+            <p>Заглавная песня 'God Menu' характеризуется сильной зависимостью, которую никогда не забудут, 
+                если вы ее послушаете. В названии неоднозначно подразумевается существующее значение нового 
+                меню и значение спустившегося бога. Восемь участников относятся к новой песне как к блюду и 
+                выражают стремление уловить вкусы и вкусы всех слушателей с помощью этого меню.
+            </p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/7B3Rmyws1KcAxQfYPoInEZ" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+         <hr>
+    </section>
+    <section id="levanter">
+      
+        <div class="onwhite" ><h1><b>Clé: LEVANTER</b></h1></div>
+          <div class="cover"><img src="../img/3.jpg"> </div>
+          <div class="info">
+            <p>В новый мини-альбом вошли заглавные песни «Levanter», «STOP», «Double Knot», «Booster», 
+                «Astronaut», «Sunshine», «You Can STAY» и «Mixtape #5», которые можно услышать только 
+                на компакт-диске. Всего было записано 8 треков размером до 5'. Опять же, все парни 
+                участвовал в написании текстов и ​​сочинении всех песен чтобы раскрыть оригинальный колорит Stray Kids.
+            </p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/5tCOElmd7wcBGbt1f8bFYR" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+         <hr>
+    </section>
+    <section id="yw">
+        <div class="onwhite" ><h1><b>Clé 2 : Yellow Wood</b></h1></div>
+          <div class="cover"><img src="../img/4.jpg"> </div>
+          <div class="info">
+            <p>«Желтое дерево» - это пространство в лабиринте, которое вошло в лабиринт, полный энергии, 
+                выбрав «дорогу, по которой никогда не ступали» вместо стабильной и легкой дороги. Они верили 
+                в себя, каким бы грубым и жестким ни был «Желтый лес», поэтому им нечего было бояться. 
+                Stray Kids посвятили всю свою энергию идению своим собственным путем, но вскоре столкнулись 
+                с неизбежными тревогами и замешательством.
+            </p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/162XZSDZpr559n4iyLy8m5" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+         <hr>
+    </section>
+    <section id="mr">
+        <div class="onwhite" ><h1><b>Clé 1 : Miroh</b></h1></div>
+          <div class="cover"><img src="../img/5.jpg"> </div>
+          <div class="info">
+            <p>Мальчики, стоявшие на пороге взрослости и взглянувшие на себя, наконец, 
+              делают свои первые шаги во взрослом мире. Это также довольно смело В предыдущем 
+              альбоме серии «I am» молодые парни, которые боролись за свое существование, 
+              сбежали из нашего собственного пространства (район 9) с «YOU», у которого 
+              aбыли те же проблемы, в «MIROH», город в пустыне, похожий на джунгли. 
+            </p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/79Bjt5oUy1183RJw1bJyF5" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+         <hr>
+    </section>
+    <section id="iy">
+      <div class="onwhite" ><h1><b>I Am You</b></h1></div>
+        <div class="cover"><img src="../img/6.jpg"> </div>
+        <div class="info">
+          <p>Заглавная песня «I am YOU» - это песня в жанре хип-хоп с великолепным, но 
+            лирическим чувством. Этот трек был написан командой продюсеров 3RACHA и 
+            сочетает в себе гитарное исполнение и интенсивные трэп-биты. Мощный рэп участников 
+            и эмоциональный вокал сливаются воедино, чтобы придать песне изысканность.
+          </p>
+        </div>
+        <iframe src="https://open.spotify.com/embed/album/51qHHvrptoKt4XsDLacc4w" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+       </div>
+       <hr>
+  </section>
+  <section id="iw">
+    <div class="onwhite" ><h1><b>I Am Who</b></h1></div>
+      <div class="cover"><img src="../img/7.jpg"> </div>
+      <div class="info">
+        <p>Заглавная песня «I am WHO» «My Pace» - это песня в жанре хип-хоп, которая 
+          содержит смелое послание «Я пойду своим собственным путем». Лирика, 
+          подчеркивающая значение фразы «У каждого свой темп, и нормально идти в 
+          таком темпе, доверять себе» успокаивает тревогу и беспокойство, возникающие 
+          из-за сравнения с другими. Для него характерна гармония двух звуков, 
+          крутого хип-хопа и насыщенного рока, излучающих мощную энергию.
+        </p>
+      </div>
+      <iframe src="https://open.spotify.com/embed/album/0g1j2seZWd8MWCRz4zGLg3" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+     </div>
+     <hr>
+</section>
+<section id="in">
+  <div class="onwhite" ><h1><b>I Am Not</b></h1></div>
+    <div class="cover"><img src="../img/8.jpg"> </div>
+    <div class="info">
+      <p>Заглавная песня «Район 9» - это песня, которая выражает собственное убежище Stray Kids. 
+        Призыв «Района 9» отойти от стандартизированной и унифицированной структуры и создать 
+        свой собственный домен прекрасно гармонирует с названием группы Stray Kids. Лирика 
+        была написана с сильным стремлением перевернуть все с ног на голову в той особой зоне, 
+        которую они установили, и звук был полон азарта в гибридном жанре, сочетающем хип-хоп, рок и EDM.
+      </p>
+    </div>
+    <iframe src="https://open.spotify.com/embed/album/5daUbxpeArCAUOJnHI7JIH" class ="music" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+   </div>
+   <hr>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("a[href*=#]").on("click", function(e){
+  var anchor = $(this);
+  $('html, body').stop().animate({
+  scrollTop: $(anchor.attr('href')).offset().top
+  }, 777);
+  e.preventDefault();
+  return false;
+  });
+  });
+  </script>
+  </body>
+  <footer>
+    <div class="social"><a href="https://www.instagram.com/realstraykids/"><img  src="../img/inst.png" alt="logo" width="8%" height="8%"></a>
+      <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA"><img src="../img/yt.png" alt="logo" width="8%" height="8%"></a>
+      <a href="https://twitter.com/stray_kids"><img src="../img/twi.png" alt="logo" width="8%" height="8%"></a>
+      <a href="https://www.vlive.tv/channel/D7A4F1"><img src="../img/vl.png" alt="logo" width="8%" height="8%"></div></a>
+      <p style="font-size: 16px;">&copy;  06.12.2020 Moria Anastasiia</p>
+  </footer>
+</html>

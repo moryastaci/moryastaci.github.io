@@ -1,0 +1,7 @@
+<script>
+    var pass = prompt("Enter the Password:", "");
+    if (pass == null)  window.location = "../php/concerts.php";
+    else if (pass.toLowerCase() == "admin")  
+      window.location = "../php/admin.php";
+    else  window.location = "../php/concerts.php"; 
+  </script>

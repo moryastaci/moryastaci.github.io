@@ -1,6 +1,6 @@
 /* CORE STYLES */
 :root {
-    /*--primary-color: rgba(13, 110, 139, 0.75);*/
+    --primary-color:rgba(14, 4, 4, 0.76);
     --overlay-color: rgba(14, 4, 4, 0.95);
     --menu-speed: 0.75s;
   }
@@ -10,19 +10,58 @@
     padding: 0;
     box-sizing: border-box;
   }
- 
+  
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
+    
   }
-
+  hr {
+    width: 50%; 
+    height: 5px;
+    background-color: brown;
+    margin: 1% 25% 5% 25%;
+  }
+  .bio {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 16pt;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  footer {
+    background-color: rgb(56, 14, 14,0.7);
+    color: white;
+    text-align: right;
+    padding-right: 2%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .social {
+    float:left;
+  }
+  .social img {
+    margin-left: 15%;
+  }
+  .onwhite {
+    color: black;
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 20px;
+    margin-bottom: 2%;
+  
+  }
   .container {
-    max-width: 960px;
+    max-width: 95%;
     margin: auto;
     overflow: hidden;
-   padding-bottom: 25%;
+   padding-bottom: 10%;
+   font-size: 24pt;
   }
-
+  
   .showcase {
     background: var(--primary-color);
     color: #fff;
@@ -38,6 +77,7 @@
     height: 100%;
     z-index: -1;
   }
+ 
   .showcase:before {
     content: '';
     background: url(../img/bg_n.jpg) no-repeat center top/cover;
@@ -214,7 +254,7 @@
     align-items: center;
     justify-content: center;
     transform: scale(0);
-    transition: all 0.4s ease;
+    transition: all 0s ease;
   }
   
   .menu-wrap .menu>div>div {
